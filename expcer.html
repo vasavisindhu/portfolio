@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color : GhostWhite;
+  padding: 20px;
+}
+
+/* Center website */
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="ESP.jpeg" alt="Enchaning SoftSkills" style="width:100%">
+      <p>Completed Enchancing SoftSkills course from NPTEL.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="SS.jpeg" alt="Soft Skills" style="width:100%">
+      <p>Completed Soft Skills course from NPTEL.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="CS.jpeg" alt="Cyber Security" style="width:100%">
+      <p>Completed Cyber Security from Eduskills.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="IOT.jpeg" alt="Internet of Things" style="width:100%">
+      <p>Completed Introduction to Internet of Things from NPTEL.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+    <img src="ST.jpeg" alt="Software Testing" style="width:100%">
+      <p>Completed Software Testing from NPTEL.</p>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+    <img src="SALES.jpeg" alt="Salesforce" style="width:100%">
+      <p>Completed salesforce from SmartInternz.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
